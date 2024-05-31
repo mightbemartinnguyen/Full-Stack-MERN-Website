@@ -2,11 +2,10 @@
 
 ## Overview
 
-This project is a full-stack web application built using the MERN stack (MongoDB, Express.js, React, Node.js). It demonstrates the implementation of a dynamic, responsive web application with a RESTful API backend, user authentication, and CRUD operations.
+This project is a full-stack web application built using the MERN stack (MongoDB, Express.js, React, Node.js). It demonstrates the implementation of a dynamic, responsive web application with a RESTful API backend, and CRUD operations.
 
 ## Features
 
-- **User Authentication**: Register and login functionality with JWT-based authentication.
 - **CRUD Operations**: Create, Read, Update, and Delete functionalities for managing data.
 - **Responsive Design**: Ensures the application is accessible and visually appealing on all devices.
 - **RESTful API**: Backend API built with Express.js to handle client requests and interact with MongoDB.
@@ -17,7 +16,6 @@ This project is a full-stack web application built using the MERN stack (MongoDB
 - **Express.js**: Web framework for building the backend.
 - **React**: Frontend library for building user interfaces.
 - **Node.js**: JavaScript runtime for the backend.
-- **JWT (JSON Web Tokens)**: For secure user authentication.
 
 ## Project Structure
 
