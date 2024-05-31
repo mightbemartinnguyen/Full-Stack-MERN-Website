@@ -1,0 +1,94 @@
+### CREATE five documents.
+POST http://localhost:3000/restaurants HTTP/1.1
+content-type: application/json
+
+{
+    "restaurantName": "McDonalds",
+     "dateVisited": "2023-07-23",
+    "reviewScore": 71,
+    "reviewString": "The burgers were really good. I like how their french fries were seasoned."
+}
+
+### CREATE 2
+POST http://localhost:3000/restaurants HTTP/1.1
+content-type: application/json
+
+{
+    "restaurantName": "Pho Tau Bay",
+    "dateVisited": "2023-11-18",
+    "reviewScore": 95,
+    "reviewString": "I think this is the best Pho in the local area. My only complaint is that it is hard to find a seat because it is  that popular!"
+
+}
+
+### CREATE 3
+POST http://localhost:3000/restaurants HTTP/1.1
+content-type: application/json
+
+{
+    "restaurantName": "Korean BBQ House",
+    "dateVisited": "2023-10-02",
+    "reviewScore": 100,
+    "reviewString": "Great experience. Good price and I really enjoyed the BBQ. Nothing to complain about!"
+
+}
+
+### CREATE 4
+POST http://localhost:3000/restaurants HTTP/1.1
+content-type: application/json
+
+{
+    "restaurantName": "Godzilla Bakery",
+    "dateVisited": "2023-09-02",
+    "reviewScore": 92,
+    "reviewString": "Very good selection of baked goods. Everything is fresh and I like the name too."
+
+}
+
+### CREATE 5
+POST http://localhost:3000/restaurants HTTP/1.1
+content-type: application/json
+
+{
+    "restaurantName": "Trashcan",
+    "dateVisited": "2023-08-02",
+    "reviewScore": 18,
+    "reviewString": "Really bad experience. Everything looked like garbage and there was a bad smell. Do not visit."
+
+}
+
+
+### RETRIEVE all documents.
+GET http://localhost:3000/restaurants HTTP/1.1
+
+
+
+### RETRIEVE a document by its ID.
+### Replace the following ID with one that exists in the collection.
+### Grab the Pho Tau Bay document
+GET http://localhost:3000/restaurants/656c0cb99c913f15e8cdb672 HTTP/1.1
+
+
+### UPDATE one document's year, by ID.
+### Replace TrashCan document with new stats
+PUT http://localhost:3000/restaurants/656c10161323b75b7aeb6296 HTTP/1.1
+content-type: application/json
+
+{
+    "restaurantName": "Trashcan",
+    "dateVisited": "2023-08-07",
+    "reviewScore": 98,
+    "reviewString": "They really changed the experience of the restaurant. It really feels like a new place. Would recommend to anyone looking for a new experience."
+
+}
+
+### DELETE by ID (responds with nothing if successful):
+### delete trashcan document
+DELETE http://localhost:3000/restaurants/656c10161323b75b7aeb6296 HTTP/1.1
+
+
+
+### RETRIEVE all documents (responds with 4 or the original 5):
+GET http://localhost:3000/restaurants HTTP/1.1
+
+
